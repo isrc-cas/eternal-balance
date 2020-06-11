@@ -103,3 +103,12 @@ cd csibe
 <img src="20200610-RISCV-CodeSize-data/images/result1.png">
 
 <img src="20200610-RISCV-CodeSize-data/images/result2.png">
+
+以上产生的数据文件存放在 ` /20200610-RISCV-CodeSize-data/raw_all_results/` 目录下，按照 RISCV 工具链数据报第一期的处理方法，对以上数据整理可以得到类似的结果。对比图如下：
+
+<img src="20200610-RISCV-CodeSize-data/images/result3_RV64_RV32.png" width="800" height="450">
+
+<img src="20200610-RISCV-CodeSize-data/images/result4_Os_O3.png" width="800" height="450">
+
+<img src="20200610-RISCV-CodeSize-data/images/result5_clang_gcc.png" width="800" height="450">
+
