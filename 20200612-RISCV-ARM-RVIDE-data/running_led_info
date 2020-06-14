@@ -1,0 +1,11 @@
+D:/RISCVIDE/compiler/rv32imafc/bin/riscv32-unknown-elf-gcc.exe -march=rv32imac -mabi=ilp32 -mcmodel=medlow -msmall-data-limit=8 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -I"D:/RISCVIDE/ws/last_test/Application" -I"../Utilities/LCD_common" -I"../Peripherals/Include" -I"../Peripherals" -I"../RISCV/drivers" -I"../Utilities" -I"../Application" -I"../" -I"D:/RISCVIDE/compiler/rv32imafc/riscv32-unknown-elf/include" -I"D:/RISCVIDE/compiler/rv32imafc/lib/gcc/riscv32-unknown-elf/8.3.0/include" -I"D:/RISCVIDE/compiler/rv32imafc/lib/gcc/riscv32-unknown-elf/8.3.0/include-fixed"  -c "../Application/main.c" -o "Application/main.o"
+D:/RISCVIDE/compiler/rv32imafc/bin/riscv32-unknown-elf-gcc.exe -march=rv32imac -mabi=ilp32 -mcmodel=medlow -msmall-data-limit=8 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -I"D:/RISCVIDE/ws/last_test/RISCV/env_Eclipse" -I"../Utilities/LCD_common" -I"../Peripherals/Include" -I"../Peripherals" -I"../RISCV/drivers" -I"../Utilities" -I"../Application" -I"../" -I"D:/RISCVIDE/compiler/rv32imafc/riscv32-unknown-elf/include" -I"D:/RISCVIDE/compiler/rv32imafc/lib/gcc/riscv32-unknown-elf/8.3.0/include" -I"D:/RISCVIDE/compiler/rv32imafc/lib/gcc/riscv32-unknown-elf/8.3.0/include-fixed"  -c "../RISCV/env_Eclipse/your_printf.c" -o "RISCV/env_Eclipse/your_printf.o"
+D:/RISCVIDE/compiler/rv32imafc/bin/riscv32-unknown-elf-ld.exe "Application/main.o" "RISCV/env_Eclipse/your_printf.o" -melf32lriscv --start-group -lstdc++_nano -lm -lg_nano -lgcc -lc_nano -lperipherals --end-group --gc-sections -T"../Running_Led.lds" -o "Running_Led.out"  -L"../" -L"D:/RISCVIDE/compiler/rv32imafc/lib/gcc/riscv32-unknown-elf/8.3.0/rv32imac/ilp32" -L"D:/RISCVIDE/compiler/rv32imafc/riscv32-unknown-elf/lib/rv32imac/ilp32" 
+   text       data        bss        dec        hex    filename
+   8068        152       2198      10418       28b2    D:/RISCVIDE/ws/last_test/Release/Running_Led.out
+ 
+------------------------- 编 译 完 成 --------------------------
+ 
+     错误: 0 , 警告: 0  [编译文件: 2 , 成功: 2 , 失败: 0]
+ 
+ 
